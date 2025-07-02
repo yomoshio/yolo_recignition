@@ -1,0 +1,11 @@
+steak
+salad
+soup
+cake
+tea
+empty_plate_steak
+empty_plate_salad
+empty_plate_soup
+empty_plate_cake
+cup
+empty_cup
