@@ -1,11 +1,21 @@
 # Система детекции блюд с использованием YOLOv11
 
-## Подготовка к запуску
+
+## Запуск в тестовом режиме 
 
 1. Подготовка видеофайлов
 Перед непосредственным запуском необходимо:
 
 Заполнить папку videos/ видеофайлами в формате .MOV
+Для примера все видео были скачаны с https://disk.yandex.ru/d/-VhiX2BOWdw-rg и переименованы - 
+
+    1.mov -> "videos/video1.mov"
+    2_1.mov -> "videos/video2.mov"
+    3_1.mov -> "videos/video3.mov"
+    3_2.mov -> "videos/video4.mov"
+    4_1.mov -> "videos/video5.mov"
+    4.mov -> "videos/video6.mov"
+
 Изменить список путей к видео в файле main.py:
 
 pythonvideo_paths = [
@@ -16,7 +26,8 @@ pythonvideo_paths = [
     base_dir / "videos/video5.mov",
     base_dir / "videos/video6.mov",
 ]
-Замените названия файлов на свои собственные.
+
+Для теста с заранее созданными аннотациями обязательно назвать их так и в таком порядке для корректной аннотации и аугментации.
 
 2. Распаковка аннотаций
 Распакуйте архив с аннотациями annotations/annotations.zip в ту же папку annotations/.
